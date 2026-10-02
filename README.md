@@ -13,3 +13,11 @@ c) for a non-native speaker, it is harder to evaluate how fun :) the words made 
 
 This repository presents a version of the `tinyshakespeare` dataset that is supposed to solve the outlined issues for Ukrainian speakers.
 `tinyshevchenko` is a concatenation of poems written by the Ukrainian poet [Taras Shevchenko](https://en.wikipedia.org/wiki/Taras_Shevchenko) into one text file.
+
+### dataset stats 
+
+I kept only the poems and plays and concatenated the lines with \n. I believe some additional, rather manual preprocessing could be applied.
+
+Characters count: 518,368 
+
+Characters: `!"'()*,-./0123456789:;<>?ABCDIMNPTUVX[]^_adegijklmnoprsuwyzЂЄІЇАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяєіїҐґ–—’“”…№`
