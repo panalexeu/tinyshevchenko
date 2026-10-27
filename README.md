@@ -16,8 +16,7 @@ This repository presents a version of the `tinyshakespeare` dataset that is supp
 
 ### dataset stats 
 
-I kept only the poems and plays and concatenated the lines with \n. I believe some additional, rather manual preprocessing could be applied.
+I kept only the poems and plays and joined the lines with \n. I then removed lines longer than the 99th percentile of line length (see postproc.py). In the raw dataset, the p99 line length is 37 characters, while the longest line has 1,542, so lines longer than 37 characters were dropped. This removed about 1% of lines, mostly long annotations that aren’t part of the poems.
 
-Characters count: 518,368 
-
-Characters: `!"'()*,-./0123456789:;<>?ABCDIMNPTUVX[]^_adegijklmnoprsuwyzЂЄІЇАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяєіїҐґ–—’“”…№`
+chars count: 498,227
+char: `!"'()*,-./0123456789:;<>?ABCDIMNPTUVX[]^_adegijklmnoprsuwyzЄІЇАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяєіїҐґ–—’“”…`
